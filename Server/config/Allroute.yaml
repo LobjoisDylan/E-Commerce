@@ -1,0 +1,144 @@
+articles:
+  path: /articles
+  controller: App\Controller\ArticlesController::getAllArticles
+  defaults:
+    _format: json
+
+updateArticles:
+  path: /update/article/{id}
+  controller: App\Controller\ArticlesController::UpdateArticle
+  defaults:
+    _format: json
+
+addarticles:
+  path: /articles/add
+  controller: App\Controller\ArticlesController::addArticles
+  defaults:
+    _format: json
+    
+ArticlesFilter:
+    path: /articles/search
+    controller: App\Controller\ArticlesController::getArticleByFilter
+    defaults:
+        _format: json
+
+deleteArticles:
+  path: /delete/article/{id}
+  controller: App\Controller\ArticlesController::DeleteArticle
+  defaults:
+    _format: json
+
+articlestenlast:
+  path: /articles/tenlast
+  controller: App\Controller\ArticlesController::getTenLast
+  defaults:
+      _format: json
+
+articlesId:
+  path: /articles/{id}
+  controller: App\Controller\ArticlesController::getAllArticlesById
+  defaults:
+      _format: json
+
+category:
+  path: /category
+  controller: App\Controller\CategoryController::getAllCategory
+  defaults:
+    _format: json
+
+categoryId:
+  path: /category{id}
+  controller: App\Controller\CategoryController::getCategoryById
+  defaults:
+    _format: json
+
+note:
+  path: /note
+  controller: App\Controller\NoteController::getAllNote
+  defaults:
+    _format: json
+
+commandes:
+  path: /commandes
+  controller: App\Controller\CommandesController::getAllCommandes
+  defaults:
+    _format: json
+
+commandesLastTen:
+  path: /commandes/lastten
+  controller: App\Controller\CommandesController::getTenLastCommandes
+  defaults:
+    _format: json
+
+picture:
+  path: /picture
+  controller: App\Controller\PictureController::getAllPicture
+  defaults:
+    _format: json
+
+pictureByid:
+  path: /picture/{id}
+  controller: App\Controller\PictureController::getAllArticlesById
+  defaults:
+    _format: json
+
+promotions:
+  path: /promotions
+  controller: App\Controller\PromotionsController::getAllPromotions
+  defaults:
+    _format: json
+
+PurchaseInfo:
+  path: /purchase
+  controller: App\Controller\PurchaseInfosController::getAllPurchaseInfos
+  defaults:
+    _format: json
+
+reviews:
+  path: /reviews
+  controller: App\Controller\ReviewsController::getAllReviews
+  defaults:
+    _format: json
+
+subcategory:
+  path: /subcategory
+  controller: App\Controller\SubCategoryController::getAllSubCategory
+  defaults:
+    _format: json
+
+userinfos:
+  path: /userinfos
+  controller: App\Controller\UserInfosController::getAllUserInfos
+  defaults:
+    _format: json
+
+adduser:
+    path: /user/add
+    controller: App\Controller\UsersController::getAddUser
+    defaults:
+        _format: json
+
+users:
+    path: /users
+    controller: App\Controller\UsersController::getAllUsers
+    defaults:
+        _format: json
+
+updateuser:
+    path: /update/user/{id}
+    controller: App\Controller\UsersController::UpdateUsers
+    defaults:
+      _format: json
+      
+usersid:
+    path: /users/{id}
+    controller: App\Controller\UsersController::getUsersById
+    defaults:
+        _format: json
+
+userConnect:
+    path: /connexion
+    controller: App\Controller\UsersController::getUserConnect
+    defaults:
+        _format: json
+

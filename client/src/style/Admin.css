@@ -1,0 +1,39 @@
+h1, h5 {
+    text-align: center;
+}
+
+.list {
+    display: flex;
+}
+
+.content {
+    width: 33%;
+    display: block;
+}
+
+.content {
+    width: 100%;
+}
+
+.content:first-child {
+    margin-right: 50px;
+}
+.content:last-child {
+    margin-left: 50px;
+}
+
+.gestion {
+    text-align: center;
+    background-color: #d9d9d9;
+    border: 1px solid #d9d9d9;
+}
+
+.listContainer {
+    height: 300px;
+    border: 1px solid #000000;
+    padding: 5px 10px;
+}
+
+.users {
+    display:block;
+}
